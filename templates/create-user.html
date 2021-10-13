@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Криптообменник Gift{% endblock %}
+
+{% block body %}
+<div class ="container text-center mt-5">
+    <label>
+        <h1>Регистрация</h1>
+        <form action="/create-user" method="POST">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="user" id="user" placeholder="Логин">
+                <label for="floatingInput">Логин</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" name="password" id="password" placeholder="Пароль">
+                <label for="floatingPassword">Пароль</label>
+              </div>
+            <input class="w-100 btn btn-lg btn-primary mt-3" type="submit" value="Зарегистрироватся">
+            
+
+        </form>
+    </label>
+</div>
+
+
+{% endblock %}
